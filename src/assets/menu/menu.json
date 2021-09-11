@@ -1,0 +1,34 @@
+{
+    "stavke": [
+        {
+            "label": "Employees",
+            "icon": "faCompressAlt",
+            "link": ""
+        },
+        {
+            "label": "Project",
+            "icon": "faCopy",
+            "link": ""
+        },
+        {
+            "label": "Statistics",
+            "icon": "faFile",
+            "link": ""
+        },
+        {
+            "label": "Availability",
+            "icon": "faHandshake",
+            "link": ""
+        },
+        {
+            "label": "Reports",
+            "icon": "faIdCard",
+            "link": ""
+        },
+        {
+            "label": "Registries",
+            "icon": "faPowerOff",
+            "link": ""
+        }
+    ]
+}

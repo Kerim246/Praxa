@@ -1,0 +1,34 @@
+<div id = "entireSite">
+<div class="container">
+    <form action="/action_page.php">
+        <label id="prvi">Employee search</label>
+        <br>
+        <br>
+        <label class="form-check-label" for="fname">First Name</label>
+        <label class="form-check-label" for="prezime" >Last Name</label>
+        <label class="form-check-label" for="brojTelefona" >Phone number</label>
+        <label class="form-check-label" for="datumZaposljavanja" >Hire date</label>
+        <label class="form-check-label" for="job" >Job title</label>
+        <br>
+        <input class="form-check-input" id="ime" type="text" (keyup.enter)="OnInput($event)" placeholder="type name">
+        <input class="form-check-input" id="prezime" type="text" placeholder="type surname">
+        <input class="form-check-input" id="brojTelefona" type="number" placeholder="type phone number">
+        <input class="form-check-input" id="datumZaposljavanja" type="date">
+        <input class="form-check-input" id="job" type="text" placeholder="type job">
+
+
+
+        <input type="submit" value="GO" id="go" (click)="Find()" class="btn btn-primary">
+    </form>
+</div>
+
+<div class="tipke">
+    <input class="btn btn-primary" type="submit" value="Add" id="t" (click)="Add()">
+    <input class="btn btn-primary" type="submit" value="Delete" id="t" (click)="DeleteRow()" class="btn btn-danger mr-2"
+        [disabled]="!rowsSelected()">
+</div>
+<ag-grid-angular style="margin-top:10px;height:380px !important" class="ag-theme-balham" [rowData]="rowData"
+    [columnDefs]="columnDefs" (gridReady)="OnGridReady($event)" rowSelection="multiple" suppressRowClickSelection
+    >
+</ag-grid-angular>
+</div>

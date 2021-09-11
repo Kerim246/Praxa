@@ -1,0 +1,34 @@
+<div id = "entireSite">
+<mat-toolbar class="mat-elevation-z8" style="padding-right:100px;">
+    <mat-icon
+    (click)="onToolbarMenuToggle()"
+    id="toolbarMenu">subject</mat-icon>
+    <img id="logo" src="assets/menu/logo.svg" alt="ASDASDASDASDAS" width="82" height="42" (click)="redirect()">
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" class="mat-elevation-z8" id = "sidenav" [class.menu-open]="isMenuOpen"
+    [class.menu-close]="!isMenuOpen" opened>
+
+       <mat-nav-list *ngFor="let element of menu; index as i; first as isFirst">
+
+        <a mat-list-item routerLink="/employees" *ngIf="isFirst">
+            <fa-icon [icon]="ikone[element.icon]" size="md" [fixedWidth]=true></fa-icon>
+            <span class="navigation-item-label">{{element.label}}</span>
+        </a>
+
+        <a mat-list-item routerLink="/" *ngIf="!isFirst">
+            <fa-icon [icon]="ikone[element.icon]" size="md" [fixedWidth]=true></fa-icon>
+            <span class="navigation-item-label">{{element.label}}</span>
+        </a>
+       </mat-nav-list>
+
+    </mat-sidenav>
+   <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }" >
+       <div style="height:88vh;">
+        <router-outlet>
+
+        </router-outlet>
+    </div>
+   </mat-sidenav-content>
+</mat-sidenav-container>
+</div>

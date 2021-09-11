@@ -1,0 +1,26 @@
+{
+    "osobe": [
+        {
+            "firstName": "Merima",
+            "lastName": "Ziko",
+            "phoneNumber": "38761357123",
+            "email": "asd@hotmail.com",
+            "status": "idk",
+            "BirthDate": "10.11.1998",
+            "Gender": "male",
+            "HireDate": "12.11.2010",
+            "jobTitle": "Menager"
+        },
+        {
+            "firstName": "Anel",
+            "lastName": "Hero",
+            "phoneNumber": "38761357123",
+            "email": "aaa@hotmail.com",
+            "status": "idk",
+            "BirthDate": "10.11.1998",
+            "Gender": "male",
+            "HireDate": "12.11.2010",
+            "jobTitle": "ANG"
+        }
+    ]
+}

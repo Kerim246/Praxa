@@ -1,0 +1,50 @@
+ag-grid-angular {
+    margin-left: 200px;
+    margin-right: auto;
+    width: 70%;
+}
+#entireSite {
+    max-width:95%;
+}
+.container {
+    margin-left: 200px;
+    background: #004a9f;
+    width:100%;
+    margin-top:15px;
+    position:relative;
+}
+.container label {
+    margin-left: 100px;
+    display:inline-flex;
+    color:white;
+}
+.container input {
+    display:inline-block;
+    margin: 10px;
+}
+#go {
+    background-color: lightblue;
+    margin:0 auto;
+}
+.tipke {
+    margin-top: 60px;
+    margin-left:750px;
+}
+.tipke #t{
+    margin:10px;
+}
+#prvi {
+    margin-left:10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container label {
+      display:none;
+    }
+    .container input {
+        display: block;
+    }
+    .tipke {
+        margin-right:90%;
+    }
+  }
